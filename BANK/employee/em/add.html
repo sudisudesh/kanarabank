@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add New Customer</title>
+    <link rel="stylesheet" href="C:\Users\GFGC\Desktop\bank\BANK\CSS\style.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  </head>
+  <body class="bdy">
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+           <h1><a href="C:\Users\GFGC\Desktop\bank\BANK\main.html">KANARA BANK</a></h1>
+        </div>
+      </div>
+
+    </header><!-- #header -->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#services">Notices</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <div b1.jpg role="tabpanel" aria-labelledby="profile-tab" background="#E900FF">
+      <center class="m-4"><h2><b><u>Add New Customer</u></b></h2></center>
+      <form class="row g-3" action="../forms/add-customer.php" method="post" enctype="multipart/form-data">
+          <div class="col-md-4">
+            <label class="form-label">Firstname</label>
+            <input type="text" class="form-control" name="firstname" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Fathername</label>
+            <input type="text" class="form-control" name="fathername" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Lastname</label>
+            <input type="text" class="form-control" name="lastname" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="emailaddress" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Mobile Number</label>
+            <input type="number" class="form-control" name="mobileno" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Aadhar Number</label>
+            <input type="number" class="form-control" name="aadharno" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Date Of Birth</label>
+            <input type="date" class="form-control" name="dob" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Account Number</label>
+            <input type="number" class="form-control" value="<?php echo rand(); ?>" name="accountno">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Account Balance(Minimum Balance must be 200)</label>
+            <input type="number" class="form-control" value="200" name="balance">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" name="address" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" name="city" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Taluka</label>
+            <input type="text" class="form-control" name="taluka" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">District</label>
+            <input type="text" class="form-control" name="district" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">pincode</label>
+            <input type="number" class="form-control" name="pincode" required>
+          </div>
+          <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label" required>Select state</label>
+                          <select class="form-select" name="state" aria-label="Default select example">
+                                <option selected>Select State</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                        </select>
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-check">
+                  <input class="form-check-input" type="radio" value="Male" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">Male</label>
+            </div>
+            <div class="form-check">
+                  <input class="form-check-input" type="radio" value="Female" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">Female</label>
+            </div>
+        </div>
+
+          <div class="col-md-4">
+                <button id="b" type="reset" name="back"> submit</button>
+          </div>
+          <div class="col-md-4">
+                <input type="reset" class="form-control btn btn-outline-danger btn-lg">
+          </div>
+          <button type="back" name="back"><a href="C:\Users\GFGC\Desktop\bank\BANK\employee\employee.html">BACK</a></button>
+      </form>
+
+    </div>
+    <footer id="footer">
+     <div class="container" style="margin-top : 3%">
+       <div class="copyright">
+         &copy; 2021 Copyright <strong>KANARA_BANK</strong>. All Rights Reserved
+       </div>
+     </div>
+   </footer>
+  </body>
+</html>

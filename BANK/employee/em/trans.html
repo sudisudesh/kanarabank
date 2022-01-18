@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transfer Funds</title>
+    <link rel="stylesheet" href="C:\Users\GFGC\Desktop\bank\BANK\CSS\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  </head>
+  <body class="bdy">
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+           <h1><a href="C:\Users\GFGC\Desktop\bank\BANK\main.html">KANARA BANK</a></h1>
+        </div>
+      </div>
+    </header>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#services">Notices</a></li>
+        <li><a class="nav-link scrollto" href="C:\Users\GFGC\Desktop\bank\BANK\main.html#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <div class="tab-pane fade" id="transfer" role="tabpanel" aria-labelledby="transfer-tab" style="margin-top:12%">
+          <center>
+                <h1 class="m-5"><b>Transfer Funds</b></h1>
+
+          <form action="../forms/transfer-funds.php" method="post">
+                    <div class="row">
+
+                                    <span class="input-group-text" id="inputGroup-sizing-lg">From</span>
+                                    <input type="number" name="fromaccount" class="form-control" aria-label="Sizing example input" required aria-describedby="inputGroup-sizing-lg">
+                      </div>
+
+                          <div class="col-sm-4">
+
+                                    <span class="input-group-text" id="inputGroup-sizing-lg">To</span>
+                                    <input type="number" name="toaccount" class="form-control" aria-label="Sizing example input" required aria-describedby="inputGroup-sizing-lg">
+
+                          </div>
+                          <div class="col-sm-4">
+
+                                    <input type="number" name="amount" placeholder="Enter amount" class="form-control" aria-label="Sizing example input" required aria-describedby="inputGroup-sizing-lg">
+                              </div>
+                          <div class="col-sm-4"> </div>
+                          <div class="col-sm-4 mt-4 d-flex justify-content-center">
+                          <i class="fas fa-paper-plane"></i>
+                              <input type="reset" name="transferfund" class="btn btn-primary btn-lg" value="Transfer Funds">
+                          </div>
+                          <div class="">
+                            <button type="button" name="button"><a href="C:\Users\GFGC\Desktop\bank\BANK\employee\employee.html">BACK</a></button>
+                          </div>
+                          </center>
+                </div>
+                <footer id="footer">
+                 <div class="container" style="margin-top : 10%">
+                   <div class="copyright">
+                     &copy; 2021 Copyright <strong>KANARA_BANK</strong>. All Rights Reserved
+                   </div>
+                 </div>
+               </footer>
+
+  </body>
+</html>
